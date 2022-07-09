@@ -7,7 +7,7 @@ const webRoutes = require('./routes/web.routes');
 
 // Config
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 8443;
 app.set('port', port);
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'pug');
