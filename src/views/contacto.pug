@@ -1,0 +1,54 @@
+extends home
+
+block landing
+block main 
+  section.contacto.container-fluid.pt-5.section-background.pb-5(style='margin-bottom:3rem')
+    .row.justify-content-evenly.align-items-center.bg-light.rounded.px-2.mx-0.mx-md-5.shadow
+      .col-lg-4.mb-3
+        h4.h3.mb-3.border-bottom.border-dark.py-4 Contacto
+        h4.h5 Dirección
+        a(href="https://www.google.com/maps?ll=37.121332,-3.583444&z=16&t=m&hl=es&gl=US&mapclient=embed&cid=14343920815535404745" target="_blank" style="text-decoration:none;color:var(--col-primary)")
+          span.d-inline-block C/ Miguel Delibes 2, Local 7. 18140 La Zubia, Granada
+        h4.h5.mt-2 E-mail
+        a(href="mailto:torresyroldan@eurocenterseguros.com" target="_blank" style="text-decoration:none;color:var(--col-primary)")
+          span.d-inline-block torresyroldan@eurocenterseguros.com
+        h4.h5.mt-2 Teléfonos
+        a(href="tel:+34958135117" target="_blank" style="text-decoration:none;color:var(--col-primary)")
+          span.d-block 958 135 117
+        a(href="tel:+34684328545" target="_blank" style="text-decoration:none;color:var(--col-primary)")
+          span.d-block 684 328 545
+
+      .col-lg-8.p-4.d-flex.flex-column.align-items-center
+        figure.img-fluid.text-center.fst-italic
+          img.d-inline-flex(src='/img/brand/pics/marta-torres-roldan.png' alt='imagen de Marta Torres Roldan, gerente de la empresa' style="max-width: 15rem")
+          figcaption Marta Torres Roldán
+            
+  section.text-center.my-5
+    h1.px-5(style='color:var(--col-primary)')  Síguenos en las redes sociales y no te pierdas nada!!
+    ul.mt-5.list-unstyled.d-flex.justify-content-center.align-items-center(style='gap:2rem;background-color:var(--col-brown-light);height:6rem')
+      li
+        a(href="https://www.facebook.com/Torres-y-Rold%C3%A1n-Corredur%C3%ADa-de-seguros-100753332245669/" target="_blank")
+          span.social-icon.social-facebook(style='transform: scale(1.8)')
+            i.bi.bi-facebook
+      li
+        a(href="https://www.instagram.com/torresyroldanseguros/" target="_blank")
+          span.social-icon.social-instagram(style='transform: scale(1.8)')
+            i.bi.bi-instagram
+      li
+        a(href="https://www.linkedin.com/in/marta-torres-roldan-7823a454/" target="_blank")
+          span.social-icon.social-linkedin(style='transform: scale(1.8)')
+            i.bi.bi-linkedin
+      li
+        a(href="https://www.google.com/maps?ll=37.121332,-3.583444&z=16&t=m&hl=es&gl=US&mapclient=embed&cid=14343920815535404745" target="_blank")
+          span.social-icon.social-google(style='transform: scale(1.8)')
+            i.bi.bi-google
+      li
+        a(href="https://wa.me/34684328545" target="_blank")
+          span.social-icon.social-whatsapp(style='transform: scale(1.8)')
+            i.bi.bi-whatsapp
+
+  section.py-5(style='background-color: var(--col-white)')
+    h1.text-center.mb-3.px-5(style='color:var(--col-primary);') Visita nuestras nuevas oficinas!
+    .row.justify-content-center.px-5.py-3.mx-0
+      iframe.px-0.rounded.shadow(width="1000" height="500" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.318549198671!2d-3.5856383486509125!3d37.12133575715653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fb96089af933%3A0xc70fd7fc0051b6c9!2sTorres%20y%20Rold%C3%A1n%20Corredur%C3%ADa%20de%20Seguros%20SL!5e0!3m2!1ses!2sus!4v1638863945492!5m2!1ses!2sus" frameborder="0" scrolling="no" marginheight="0" marginwidth="0")
+  

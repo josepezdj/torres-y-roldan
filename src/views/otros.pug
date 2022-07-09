@@ -1,0 +1,41 @@
+extends home
+
+block landing
+  include components/_banners
+  +main-banner("otros")
+block main 
+  main(style='background-color:var(--col-white);min-height:20vh')
+    section
+      .container-fluid.py-3(style='background-color:var(--col-white)')
+        h2.display-4.fst-italic.px-4.py-3.text-center Cómo podemos ayudarte?
+        .row.row-cols-1.row-cols-md-2.row-cols-lg-3.g-4.pt-4.text-center(style="color:var(--col-primary);")          
+          .col
+            i.bi.bi-piggy-bank(title="icon symbolizing people" style="font-size:3rem;color:var(--col-primary)")
+            h3.h5.my-3 Pensiones
+          .col
+            i.bi.bi-shield-check(title="icon symbolizing people" style="font-size:3rem;color:var(--col-primary)")
+            h3.h5.my-3 Protección jurídica
+          .col
+            i.bi.bi-currency-exchange(title="icon symbolizing people" style="font-size:3rem;color:var(--col-primary)")
+            h3.h5.my-3 Impago de alquiler
+          .col
+            i.bi.bi-basket3-fill(title="icon symbolizing people" style="font-size:3rem;color:var(--col-primary)")
+            h3.h5.my-3 Seguro de embarcaciones
+          .col
+            i.bi.bi-compass(title="icon symbolizing people" style="font-size:3rem;color:var(--col-primary)")
+            h3.h5.my-3 Seguros de viaje 
+          .col
+            i.bi.bi-hearts(title="icon symbolizing people" style="font-size:3rem;color:var(--col-primary)")
+            h3.h5.my-3 Seguros de mascotas
+          .col
+            i.bi.bi-bandaid-fill(title="icon symbolizing people" style="font-size:3rem;color:var(--col-primary)")
+            h3.h5.my-3 Seguro de patinete
+          .col
+            i.bi.bi-bicycle(title="icon symbolizing people" style="font-size:4rem;color:var(--col-primary)")
+            h3.h5.mb-3 Seguro de bicicleta
+          .col.mt-5.mx-sm-auto
+            svg.me-2(width="50" height="50" style='fill:var(--col-primary)')
+              use(xlink:href="/img/icons/icons-tyr-selected.svg#icon-users")
+            h3.h5.my-3 Comunidades
+
+        a.mybtn-special.text-center.fst-italic.my-5.mx-auto(href='/contacto') Hablamos?

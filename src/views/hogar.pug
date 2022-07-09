@@ -1,0 +1,10 @@
+extends home
+
+block landing 
+  include components/_banners
+  +main-banner("hogar")
+
+block main 
+  main(style='background-color:var(--col-white);min-height:20vh')
+    .py-5
+      a.mybtn-special.text-center.fst-italic.mx-auto(href='/contacto') Llámanos

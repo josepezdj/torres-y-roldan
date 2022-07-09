@@ -1,0 +1,146 @@
+doctype html
+html(lang="es")
+  head
+    title(style="text-transform: uppercase") Torres y Roldán | #{title}
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    //- meta(http-equiv="Content-Security-Policy" content="script-src https://maps.google.com/")
+    
+    link(rel="icon" type="image/png" href="/img/brand/tyr-logo.png")
+ 
+    //- CUSTOM FONT: LATO
+    link(href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet")
+    //- CUSTOM FONT: PETIT FORMAL SCRIPT
+    link(href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet")
+
+    //- BOOTSTRAP Icons
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css")
+
+        //- BOOTSTRAP CSS
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous")
+    
+    //- CUSTOM STYLES SHEETS
+    link(rel='stylesheet' href='/css/main.css')
+    link(rel='stylesheet' href='/css/backgrounds.css')
+    link(rel='stylesheet' href='/css/navbar.css')
+    link(rel='stylesheet' href='/css/typography.css')
+    link(rel='stylesheet' href='/css/components.css')
+    link(rel='stylesheet' href='/css/social-media.css')
+
+body.bg-white
+  //- Upper contact-directly links
+  .container-fluid.fixed-top.ps-3.pe-1.pe-sm-2.top-most-contact-banner
+    .py-2.text-light.d-flex.justify-content-end.align-items-center.mx-auto(style="max-width:var(--max-width);height: 100%")
+      a.text-light.px-2.px-lg-3.border-end(href="https://www.google.com/maps?ll=37.121332,-3.583444&z=16&t=m&hl=es&gl=US&mapclient=embed&cid=14343920815535404745" target="_blank" style="text-decoration:none")
+        i.bi.bi-geo-alt.me-0.me-sm-2
+        span.d-none.d-xl-inline-block C/ Miguel Delibes 2. La Zubia, Granada
+      a.text-light.px-2.px-sm-3.border-end(href="mailto:torresyroldan@eurocenterseguros.com" target="_blank" style="text-decoration:none")
+        i.bi.bi-envelope.me-0.me-md-2
+        span.d-none.d-md-inline-block torresyroldan@eurocenterseguros.com
+      a.text-light.px-2.px-sm-3(href="tel:+34958135117" target="_blank" style="text-decoration:none")
+        i.bi.bi-telephone.me-2
+        span.d-none.d-sm-inline-block 958 135 117
+  div
+    ul.social-icons-wrapper
+      p.text-light.me-1.d-none.d-sm-inline-block(style="padding-top:.1rem")
+        em Síguenos!
+      li
+        a(href="https://www.facebook.com/Torres-y-Rold%C3%A1n-Corredur%C3%ADa-de-seguros-100753332245669/" target="_blank")
+          span.social-icon.social-facebook
+            i.bi.bi-facebook
+      li
+        a(href="https://www.instagram.com/torresyroldanseguros/" target="_blank")
+          span.social-icon.social-instagram
+            i.bi.bi-instagram
+      li
+        a(href="https://www.linkedin.com/in/marta-torres-roldan-7823a454/" target="_blank")
+          span.social-icon.social-linkedin
+            i.bi.bi-linkedin
+      li
+        a(href="https://www.google.com/maps?ll=37.121332,-3.583444&z=16&t=m&hl=es&gl=US&mapclient=embed&cid=14343920815535404745" target="_blank")
+          span.social-icon.social-google
+            i.bi.bi-google
+      li
+        a(href="https://wa.me/34684328545" target="_blank")
+          span.social-icon.social-whatsapp
+            i.bi.bi-whatsapp
+
+  //- NAV
+  nav.mynavbar.navbar.navbar-expand-lg.navbar-dark.fixed-top.shadow(style="opacity: .95;margin-top:var(--topmost-header-height);z-index:5000")
+    .container
+      a(href='/')
+        img.img-fluid(src="/img/brand/tyr-logo.png" style="width:auto;height:var(--topmost-header-height);object-fit:contain")
+        img.img-fluid.ms-2.d-none.d-md-inline-block(src="/img/brand/tyr-brand.png" style="width:auto;height:35px;object-fit:contain")
+      button.navbar-toggler(
+        type='button' 
+        data-bs-toggle='collapse' 
+        data-bs-target='#mainMenu' 
+        aria-controls='#mainMenu' 
+        aria-expanded='false' 
+        aria-label='Toggle navigation'
+        )
+        span.navbar-toggler-icon
+      #mainMenu.collapse.navbar-collapse.pt-0
+        ul.navbar-nav.text-end.ms-auto.mb-2.mb-lg-0
+          li.nav-item.me-3
+            a.nav-link.ps-2.ms-1(href='/')
+              i.bi.bi-house-fill.me-2
+              span Inicio
+          li.nav-item.me-3
+            a.nav-link.ps-2.ms-1(href='/nosotros')
+              i.bi.bi-people-fill.me-2
+              span Nosotros
+          li.nav-item.dropdown
+            a#navbarDropdown.nav-link.dropdown-toggle(
+              href='#' 
+              role='button' 
+              data-bs-toggle='dropdown' 
+              aria-expanded='false'
+              )
+              i.bi.bi-shield-fill-check.me-2
+              span Seguros
+            ul.dropdown-menu.w-25.float-end(aria-labelledby='navbarDropdown' style="background-color:var(--col-primary); border:0")
+              li
+                a.dropdown-item.d-flex.align-items-center(href="/hogar")
+                  i.bi.bi-house-door-fill.me-2
+                  span Hogar
+              li
+                a.dropdown-item.d-flex.align-items-center(href="/coche") 
+                  svg.me-2(width="15" height="15")
+                    use(xlink:href="/img/icons/icons-tyr-selected.svg#icon-car")
+                  span Coche
+              li
+                a.dropdown-item.d-flex.align-items-center(href="/salud")
+                  i.bi.bi-activity.me-2
+                  span Salud
+              li
+                a.dropdown-item.d-flex.align-items-center(href="/moto") 
+                  svg.me-1(width="20" height="20")
+                    use(xlink:href="/img/icons/icons-tyr-selected.svg#icon-motorcycle")
+                  span Moto 
+              li
+                a.dropdown-item.d-flex.align-items-center(href="/vida")
+                  i.bi.bi-suit-heart-fill.me-2
+                  span Vida
+              li
+                a.dropdown-item.d-flex.align-items-center(href="/empresas") 
+                  svg.me-1(width="20" height="20")
+                    use(xlink:href="/img/icons/icons-tyr-selected.svg#icon-handshake")
+                  span Empresas 
+              li
+                a.dropdown-item.d-flex.align-items-center(href="/decesos")
+                  svg.me-1(width="18" height="18")
+                    use(xlink:href="/img/icons/icons-tyr-selected.svg#icon-dove")
+                  span Decesos
+              li
+                hr.dropdown-divider(style="color:var(--col-secondary)")
+              li
+                a.dropdown-item.d-flex.align-items-center(href="/otros") 
+                  i.bi.bi-shield-shaded.me-2
+                  span Otros
+          li.nav-item.me-3
+            a.nav-link.ps-2.ms-1(href='contacto')
+              i.bi.bi-telephone-fill.me-2
+              span Contacto
+

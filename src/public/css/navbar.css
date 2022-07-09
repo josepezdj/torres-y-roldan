@@ -1,0 +1,61 @@
+.top-most-contact-banner {
+  background-image: linear-gradient(to right bottom, var(--col-brown-light), var(--col-brown));
+  min-height: var(--topmost-header-height);
+}
+
+.mynavbar {
+  background-image: linear-gradient(
+                      120deg, 
+                      white 0%, 
+                      var(--col-white) 41%, 
+                      var(--col-tertiary) 42%, 
+                      var(--col-tertiary-dark) 43%,                       
+                      var(--col-secondary) 43%, 
+                      var(--col-secondary-dark) 44%,
+                      var(--col-primary) 45%,
+                      var(--col-primary) 100%);
+}
+
+.dropdown-item {
+  color: var(--col-white-alpha);
+  transition: all .2s;
+}
+
+.dropdown-item i {
+  color: var(--col-white);
+}
+
+.dropdown-item svg {
+  fill: var(--col-white);
+}
+
+.dropdown-item.active {
+  font-weight: 500;
+  background-color: var(--col-brown-light);
+  border-left: 2px solid var(--col-secondary) !important;
+}
+
+.dropdown-item.active svg {
+  fill: var(--col-secondary) !important;
+}
+
+.dropdown-item.active i {
+  color: var(--col-secondary) !important;
+}
+
+.dropdown-item:hover i {
+  color: var(--col-primary)
+}
+
+.dropdown-item:hover svg {
+  fill: var(--col-primary)
+}
+
+.nav-link.active i {
+  padding-left: 1rem;
+  border-left: 2px solid var(--col-secondary) !important;
+}
+
+.active i {
+  color: var(--col-secondary) !important; 
+}

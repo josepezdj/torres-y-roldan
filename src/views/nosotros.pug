@@ -1,0 +1,48 @@
+extends home
+
+block landing
+
+block main 
+  section.section-background.nosotros.container.px-0(style="margin-top: var(--mt-to-header)")
+    img.img-fluid.d-block.w-100(src="/img/brand/pics/TyR-banner2.png" alt="brand logo")
+    h3.display-4.text-center.text-dark.my-4.w-75.mx-auto.petit ¿Por qué escogernos a nosotros?
+      
+    main.pb-5
+      .row.justify-content-evenly.align-items-center.px-4
+        .col-md-5.text-center.pb-5
+          i.bi.bi-chat-heart.px-0(style='font-size:8rem;color:var(--col-brown)')
+        .col-md-7.text-dark.text-center
+          h3.fst-italic(style='color:var(--col-primary)') Hablamos el mismo idioma!
+          p.my-3.mx-auto(style='max-width: 75%') Te hablamos claro, de tú a tú, sin tecnicismos, para que sepas decidir que coberturas son las que mejor se ajustan a tus necesidades
+      .row.justify-content-evenly.align-items-center.px-4
+        .col-md-7.text-dark.text-center.order-2.order-md-1
+          h3.fst-italic(style='color:var(--col-primary)') Siempre estamos de tu parte!
+          p.my-3.mx-auto(style='max-width: 75%') Te representamos ante las compañías aseguradoras, te defendemos en los siniestros!
+        .col-md-5.text-center.pb-5.order-1.order-md-2
+          i.bi.bi-shield-lock.px-0(style='font-size:8rem;color:var(--col-brown)')
+      .row.justify-content-evenly.align-items-center.px-4
+        .col-md-5.text-center.pb-5
+          svg.me-2(width="150" height="150" style='fill:var(--col-brown)')
+            use(xlink:href="/img/icons/icons-tyr-selected.svg#icon-handshake")
+          
+        .col-md-7.text-dark.text-center
+          h3.fst-italic(style='color:var(--col-primary)') Tu correduría de confianza en Granada!
+          p.my-3.mx-auto(style='max-width: 75%') Más de 40 años en el sector, cuidándote, velando por tu tranquilidad
+
+
+      article.px-4.py-5
+        h3.display-3.pb-4.text-center.petit Nuestra pequeña historia...
+        .col.col-md-8.mx-auto.position-relative
+          p.pb-2(style='text-indent:4rem;') Somos una empresa de Correduría de Seguros familiar, Torres y Roldán, con más de 40 años de recorrido y formando parte de un Grupo de prestigio y solvencia de Granada, #[em Grupo Eurocenter], y que a su vez forma parte integrante de #[em Espanor], asociación a nivel nacional con un volumen de primas y socios muy considerable.
+          .text-center.w-100.pb-4
+            img(src='/img/brand/espanor.jpg' style='max-height:5rem;opacity:60%;')
+        .col.col-md-8.mx-auto
+          p.pb-4(style='text-indent:4rem') Nacimos con la primera generación que la constituyó José Torres Gutiérrez como Delegado de la extinta Compañía #[em MUNAT]. Comenzamos la andadura entre él, su hijo #[em José Ángel Torres Velasco] y #[em Rosa María Roldán Rodríguez] hasta convertirnos en Correduría y formar parte de la primera Asociación de Corredurías de Andalucía, #[em Grupo SENECA]. Así tuvo lugar la segunda generación, #[em Torres y Roldán Correduría de Seguros], formada por el matrimonio, corredores de seguros ambos.
+        .col.col-md-8.mx-auto
+          p.pb-4(style='text-indent:4rem') Actualmente estamos en la tercera generación a la que se ha incorporado nuestra hija #[em Marta Torres Roldán], también Corredora de Seguros y licenciada en Dirección y Administración de Empresas.
+        .col.col-md-8.mx-auto
+          p.pb-4(style='text-indent:4rem') Toda una vida dedicada a la gestión y asesoramiento en seguros exclusivamente y que se ha nutrido solamente de la incorporación de más de mil clientes y unas 2.800 pólizas con el trabajo personal de sus tres componentes, sin ayuda de colaboradores ni red externa. Ello no supone una limitación en la gestión, sino todo lo contrario. Nos permite atender mejor a nuestros clientes y nos ayuda un equipo de unas 30 personas que estamos presencialmente en nuestro centro de trabajo.
+        .col.col-md-8.mx-auto
+          p.pb-4(style='text-indent:4rem') Esto es una característica que reafirma el conocimiento de sus clientes y trato personalizado, donde se conoce el nombre y peculiaridades de nuestros clientes y se les atiende como lo que son, personas que confían a través de los años de la buena gestión demostrada día a día y que tenemos repuesto para continuar otra generación más.
+
+        a.mybtn-special.text-center.fst-italic.my-5.mx-auto(href='/contacto') Hablamos?

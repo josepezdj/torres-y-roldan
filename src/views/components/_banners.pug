@@ -1,0 +1,42 @@
+mixin main-banner(category)
+  -let bannerName = `main-banner__${category}`
+  .main-banner.width-limited(class=bannerName)    
+    .main-banner__content
+      -if(category === 'otros')      
+        h3.display-4(style='font-weight: 400') Otros
+        h2.display-3.text-uppercase(style='font-weight: 400') Seguros
+      -else if(category !== 'otros')
+        h3.display-4(style='font-weight: 400') Seguros de
+        h2.display-3.text-uppercase(style='font-weight: 400')= category
+    -if(category == "hogar")
+      .text-center.my-0
+        svg.main-banner__icon
+          use(xlink:href="./img/icons/icons-tyr-selected.svg#icon-home8")
+    -if(category == "salud")
+      .text-center
+        svg.main-banner__icon
+          use(xlink:href="./img/icons/icons-tyr-selected.svg#icon-heartbeat")
+    -if(category == "coche")
+      .text-center
+        svg.main-banner__icon
+          use(xlink:href="./img/icons/icons-tyr-selected.svg#icon-car")
+    -if(category == "moto")
+      .text-center
+        svg.main-banner__icon
+          use(xlink:href="./img/icons/icons-tyr-selected.svg#icon-motorcycle")
+    -if(category == "vida")
+      .text-center
+        svg.main-banner__icon
+          use(xlink:href="./img/icons/icons-tyr-selected.svg#icon-heart5")
+    -if(category == "empresas")
+      .text-center
+        svg.main-banner__icon
+          use(xlink:href="./img/icons/icons-tyr-selected.svg#icon-handshake")
+    -if(category == "decesos")
+      .text-center
+        svg.main-banner__icon
+          use(xlink:href="./img/icons/icons-tyr-selected.svg#icon-awareness-ribbon")
+    -if(category == "otros")
+      .text-center
+        svg.main-banner__icon
+          use(xlink:href="./img/icons/icons-tyr-selected.svg#icon-shield2")

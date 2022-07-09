@@ -1,0 +1,157 @@
+/* BUTTONS */
+
+.mybtn-special {
+  width: 100%;
+  display: block;
+  transition: all .3s;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: .25rem;
+  text-decoration: none;
+  color: var(--col-white);
+  background-color: var(--col-primary-dark);
+  padding: .5rem 1.5rem;
+  border: none
+}
+.mybtn-special:hover {
+  color: var(--col-black);
+  background-color: var(--col-secondary);
+  box-shadow: .1rem .2rem .5rem rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 530px) {  
+  .mybtn-special {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    max-width: 50%
+  }
+}
+
+.mybtn {
+  display: block;
+  border-radius: .25rem;
+  text-decoration: none;
+  transition: all .3s;
+  padding: .7rem 1.2rem
+}
+
+.mybtn:hover {
+  box-shadow: .1rem .2rem .3rem rgba(0, 0, 0, 0.2);
+}
+
+.mybtn-primary {
+  color: var(--col-white);
+  background-color: var(--col-primary-dark);
+}
+.mybtn-primary:hover {
+  color: var(--col-white);
+  background-color: var(--col-primary);
+}
+.mybtn-green {
+  color: var(--col-white);
+  background-color: var(--col-green-dark);
+}
+.mybtn-green:hover {
+  color: var(--col-white);
+  background-color: var(--col-green);
+}
+.mybtn-secondary {
+  color: var(--col-primary);
+  background-color: var(--col-secondary-dark);
+}
+.mybtn-secondary:hover {
+  color: var(--col-primary);
+  background-color: var(--col-secondary);
+}
+.mybtn-tertiary {
+  color: var(--col-white);
+  background-color: var(--col-tertiary-dark);
+}
+.mybtn-tertiary:hover {
+  color: var(--col-brown-light);
+  background-color: var(--col-tertiary);
+}
+.mybtn-brown {
+  color: var(--col-white);
+  background-color: var(--col-brown-dark);
+}
+.mybtn-brown:hover {
+  color: var(--col-white);
+  background-color: var(--col-brown);
+}
+.mybtn-purple {
+  color: var(--col-white);
+  background-color: var(--col-purple-dark);
+}
+.mybtn-purple:hover {
+  color: var(--col-white);
+  background-color: var(--col-purple);
+}
+.mybtn-pink {
+  color: var(--col-white);
+  background-color: var(--col-pink-dark);
+}
+.mybtn-pink:hover {
+  color: var(--col-white);
+  background-color: var(--col-pink);
+}
+.mybtn-white {
+  width: 100%;
+  color: var(--col-black);
+  background-color: var(--col-white);
+}
+.mybtn-white:hover {
+  color: var(--col-primary);
+  box-shadow: .1rem .2rem .2rem rgba(168, 160, 160, 0.3);
+}
+
+/* LINKS */
+.link {
+  color: var(--col-white);
+  text-decoration: none;
+  transition: all .3s;
+  padding-bottom: .2rem;
+  position: relative;
+}
+.link:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2%;
+  width: 0;
+  height: 1px;
+  background-color: var(--col-secondary);
+  transform: translateX(-50%);
+  transition: all .3s;
+}
+.link:hover {
+  color: var(--col-white-muted)
+}
+.link:hover:after {
+  width: 100%
+}
+/* CARDS */
+.card {
+  transition: all .3s;
+  box-shadow: .1rem .2rem .5rem rgba(0,0,0, 0.3);
+}
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* CAROUSEL */
+.company {
+  filter: grayscale(100%);
+  transition: transform 2.6s ease-in-out, filter .3s ease-in-out;
+}
+.company:hover {
+  filter: grayscale(0);
+}
+/* change transition duration to control the speed of fade effect */
+#insurancesCarousel .carousel-item {
+  transition: transform 1s ease-in-out;
+}
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 1.6s;
+} 

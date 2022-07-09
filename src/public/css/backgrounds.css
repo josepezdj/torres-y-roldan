@@ -1,0 +1,135 @@
+
+/* BACKGROUNDS */
+.section-background {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+.nosotros {
+  background-image: linear-gradient(to bottom, var(--col-white-alpha), var(--col-white)),url(/img/bg/img-old-telephone2.jpg);
+}
+.insurances {
+  background-image: linear-gradient(to bottom, var(--col-primary), var(--col-primary-alpha)),url(/img/bg/bg-wood-green.jpg);
+}
+
+.cta-btn {
+  background-image: linear-gradient(to right bottom, var(--col-white), var(--col-white-alpha)), url(/img/bg/bg-building-abstract2.jpg);
+  color: var(--col-primary);
+}
+
+.contacto {
+  margin-top: var(--mt-to-header);
+  background-image: linear-gradient(to bottom, var(--col-white), var(--col-primary-alpha)),url(/img/bg/img-nature-abstract.jpg);
+}
+
+.insurances-carousel {
+  background-image: linear-gradient(to right bottom, var(--col-black), var(--col-black-alpha)),url(/img/bg/bg-beach-4.jpg);
+  box-shadow: .1rem .2rem .5rem rgba(241, 241, 241, 0.2);
+}
+
+.footer {
+  background-image: linear-gradient(to bottom right, var(--col-black), var(--col-black-alpha)),url(/img/brand/pics/TyR-oficina.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 25rem;
+}
+
+.main-banner__content {
+  color: var(--col-white);
+  margin-top: var(--mt-to-header);
+  padding: 2rem 0;
+  text-align: center;
+  min-height: 20vh;
+  position: relative
+}
+
+@media (min-width: 544px) {  
+  .main-banner__content {  
+    min-height: 30vh;
+  }
+}
+
+@media (min-width: 768px) {  
+  .main-banner__content {  
+    min-height: 40vh;
+  }
+}
+
+.main-banner__icon {
+  fill: var(--col-white);
+  width: 10vw;
+}
+
+.main-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-top: var(--mt-to-header);
+}
+
+.main-banner__hogar {
+  background-image: linear-gradient(
+    to bottom,
+    var(--col-black-alpha) 0%, 
+    var(--col-primary-alpha) 30%),    
+    url(/img/bg/bg-family-playing-in-bed.jpg);
+}
+
+.main-banner__coche {
+  background-image: linear-gradient(
+    to bottom,
+    var(--col-brown) 0%, 
+    var(--col-primary-alpha) 50%),    
+    url(/img/bg/img-car-closeup-inside2.jpg);
+}
+
+.main-banner__salud {
+  background-image: linear-gradient(
+    to bottom,
+    var(--col-black) 0%, 
+    var(--col-primary-alpha) 30%),    
+    url(/img/bg/bg-nature-girl-yoga.jpg);
+}
+
+.main-banner__moto {
+  background-image: linear-gradient(
+    to bottom,
+    var(--col-black-alpha) 0%, 
+    var(--col-primary-alpha) 70%),    
+    url(/img/bg/bg-motorcycle-nature.jpg);
+}
+
+.main-banner__vida {
+  background-image: linear-gradient(
+    to bottom,
+    var(--col-black-alpha) 0%, 
+    var(--col-primary-alpha) 50%),    
+    url(/img/bg/bg-family-outdoors.jpg);
+}
+
+.main-banner__empresas {
+  background-image: linear-gradient(
+    to bottom,
+    var(--col-black-alpha) 0%, 
+    var(--col-primary-alpha) 30%),    
+    url(/img/bg/bg-people-office.jpg);
+  background-position: top;
+}
+
+.main-banner__decesos {
+  background-image: linear-gradient(
+    to bottom,
+    var(--col-brown) 0%, 
+    var(--col-primary-alpha) 70%),    
+    url(/img/bg/bg-beach-4.jpg);
+}
+
+.main-banner__otros {
+  background-image: linear-gradient(
+    to bottom,
+    var(--col-black-alpha) 0%, 
+    var(--col-primary-alpha) 70%),    
+    url(/img/bg/img-girl-dog-home.jpg);
+}

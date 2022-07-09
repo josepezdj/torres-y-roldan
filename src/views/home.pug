@@ -1,0 +1,289 @@
+//- HEADER
+include _header
+
+//- CONTENT
+
+block landing
+  section.container-fluid.px-0
+    #carousel.carousel.slide.w-100(data-bs-ride='carousel' style="margin-top: var(--mt-to-header)")
+      .carousel-indicators
+        button.active(type='button' data-bs-target='#carousel' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+        button(type='button' data-bs-target='#carousel' data-bs-slide-to='1' aria-label='Slide 2')
+        button(type='button' data-bs-target='#carousel' data-bs-slide-to='2' aria-label='Slide 3')
+      .carousel-inner
+        .carousel-item.active(style="max-height: 70vh")
+          img.d-block.w-100(src='/img/bg/bg-family-dark.jpg' alt='mother holding a baby smiling both')
+          .carousel-caption.text-start.d-flex.flex-column.align-items-end
+            h2.heading.text-uppercase.text-light.text-end Tu tranquilidad es nuestra prioridad
+            h3.sub-heading.text-end(style='color:var(--col-white-muted);font-style:italic') Somos tu agente de seguros de confianza
+        .carousel-item(style="max-height: 70vh")
+          img.d-block.w-100(src='/img/bg/bg-family-at-home2.jpg' alt='couple at home relaxing')
+          .carousel-caption.text-start.d-flex.flex-column.align-items-start
+            h2.heading.text-uppercase(style="color:var(--col-secondary)") Cuidamos de ti y los tuyos
+            h3.sub-heading(style='color:var(--col-white-muted);font-style:italic') Para que tú sólo tengas que preocuparte de vivr tranquilo
+        .carousel-item(style="max-height: 70vh")
+          img.d-block.w-100(src='img/bg/bg-couple-bike-outdoors-SM.jpg' alt='man with child on the beach')
+          .carousel-caption.text-end.d-flex.flex-column.align-items-end(style="bottom:0;top:10%")
+            h2.heading.text-uppercase(style="color:var(--col-primary") Tu futuro protegido
+            h3.sub-heading(style="color: var(--col-pink-dark);font-style:italic") Estás en las mejores manos
+      button.carousel-control-prev(type='button' data-bs-target='#carousel' data-bs-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.visually-hidden Previous
+      button.carousel-control-next(type='button' data-bs-target='#carousel' data-bs-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.visually-hidden Next
+
+block main
+  section.features.py-4.bg-light
+    .container.mx-auto
+      .row.g-3.text-center.justify-content-evenly(style="color:var(--col-black)")
+        .col-md-4.px-0
+          i.bi.bi-people(title="icon symbolizing people" style="font-size:3rem;color:var(--col-primary)")
+          h3.h5.my-3 Particulares
+          p.mb-0 Trato directo y de confianza
+          p.mb-0 Personalizamos tu seguro
+          p.mb-0 Paga sólo por aquello que necesitas
+        .col-md-4.pt-2.px-0
+          svg(role="img" style="width:4rem;height:4rem;fill:var(--col-primary)")   
+            use(href="/img/icons/icons-tyr-selected.svg#icon-handshake")
+          h3.h5.my-3 Empresas y autónomos
+          p.mb-0 Protegemos tu negocio y a tus empleados
+          p.mb-0 Sabemos que cada negocio es único
+          p.mb-0 Tenemos la protección que necesitas
+        .col-md-4.px-0
+          i.bi.bi-umbrella(title="icon symbolizing an umbrella" style="font-size: 3rem;color:var(--col-primary)")
+          h3.h5.my-3 Todas las coberturas
+          p.mb-0 Trabajamos con las mejores compañías aseguradoras
+          p.mb-0 Agrupa tus seguros con nosotros 
+          p.mb-0 Consigue ventajas exclusivas
+
+  section.section-background.insurances
+    .container.py-5
+      h3.display-4.text-light.text-center.mb-5.fst-italic(style="font-weight: 400") Contigo desde 1980
+      .row.row-cols-1.row-cols-md-2.row-cols-lg-3.g-4
+        .col
+          .card.h-100
+            img.card-img-top(src='/img/bg/bg-couple-at-home.jpg' alt='pareja en casa confortablemente dándose un abrazo')
+            .card-body.d-flex.flex-column.justify-content-between
+              h4.card-title.text-center.mb-4 Seguros de Hogar
+              p.card-text ¿Quieres proteger tu casa y no sabes qué coberturas necesitas? Nosotros te ayudamos a contratar el mejor seguro de hogar porque somos corredores, nosotros te damos las opciones, tú decides!
+              a.mybtn.mybtn-primary.text-center(href="hogar") Saber más...
+        .col
+          .card.h-100
+            img.card-img-top(src='/img/bg/img-beach-travel-girl-car.jpg' alt='chica apoyada en el capó de un coche en un día soleado')
+            .card-body.d-flex.flex-column.justify-content-between
+              h4.card-title.text-center.mb-4 Seguros de Coche
+              p.card-text Seguro de coche a terceros, terceros con lunas, terceros completo, seguro a todo riesgo con franquicia... Te ofrecemos los mejores precios sean cuales sean tus necesidades.
+              a.mybtn.mybtn-secondary.text-center(href="coche") Saber más...
+        .col
+          .card.h-100.justify-content-around
+            img.card-img-top(src='/img/bg/bg-beach-family-2.jpg' alt='familia paseando por la orilla en la playa')
+            .card-body.d-flex.flex-column.justify-content-between
+              h4.card-title.text-center.mb-4 Seguros de Vida
+              p.card-text Seguro de vida, seguro de accidentes... con la protección más completa en caso de fallecimiento, invalidez o dependencia, ofreciéndote siempre el cuidado de lo que más quieres.
+              a.mybtn.mybtn-brown.text-center(href="vida") Saber más...
+        .col
+          .card.h-100
+            img.card-img-top(src='/img/bg/bg-hospital-doctor.png' alt='imagen de un pasillo de hospital con un doctor al frente y usuarios en segundo plano')
+            .card-body.d-flex.flex-column.justify-content-between
+              h4.card-title.text-center.mb-4 Seguros de Salud
+              p.card-text Tu salud y la de tu familia siempre protegida. Las adversidades no suelen avisar, te ofrecemos las mejores coberturas en caso de enfermedad grave, invalidez, dependencia, fallecimiento...
+              a.mybtn.mybtn-purple.text-center(href="salud") Saber más...
+        .col
+          .card.h-100
+            img.card-img-top(src='/img/bg/bg-motorcycle2.jpg' alt='foto de una motocicleta en un campo al sol')
+            .card-body.d-flex.flex-column.justify-content-between
+              h4.card-title.text-center.mb-4 Seguros de Moto
+              p.card-text Asistencia sanitaria y gastos médicos para el conductor, reclamación de daños, asesoramiento por multas, reparación de los daños causados a la moto...
+              a.mybtn.mybtn-pink.text-center(href="moto") Saber más...
+        .col
+          .card.h-100
+            img.card-img-top(src='/img/bg/bg-beach-shore.jpg' alt='imagen de una orilla de una playa y aves volando')
+            .card-body.d-flex.flex-column.justify-content-between
+              h4.card-title.text-center.mb-4 Seguros de Decesos
+              p.card-text Asistencia por fallecimiento, prestaciones sanitarias y de cuidado personal, asistencia legal y asesoría...
+              a.mybtn.mybtn-green.text-center(href="decesos") Saber más...
+
+  section.section-background.cta-btn.container-fluid.py-5  
+    .container.py-5
+      h3.display-5.text-center.mb-5 Recibe tu presupuesto en menos de 24h
+      a.mybtn.mybtn-special.mx-auto.text-center.fst-italic(href="contacto") Hablamos?
+
+  section
+    .container-fluid.py-5(style='background-color: var(--col-pink-dark);')
+      .row.justify-content-center.align-items-center(style='box-shadow: .2rem .2rem .5rem rgba(0,0,0, 0.3);background-color: var(--col-pink);')
+        .col-md-5.mt-md-0.mt-5.text-center.py-5
+          img.img-fluid(src='/img/bg/img-joined-hands.jpg' alt='imagen de manos unidas en señal de colaboración' style="max-height: 50rem;border-radius:.5rem;box-shadow: .1rem .2rem .5rem rgba(0,0,0, 0.3);")
+        .col-md-6.text-light.p-5
+          h3.display-5 Empresas y autónomos
+          p.h5.my-3 Expertos en seguros para empresas. 100% personalizado para garantizar la seguridad de tu actividad y de tus bienes.
+          a.btn.btn-outline-light.mt-3(href='/empresas') Saber más...
+
+  section
+  .container-fluid.py-3(style='background-color:var(--col-white)')
+    .row.text-center.justify-content-evenly.pt-4(style="color:var(--col-primary);")
+      h2.fst-italic Nuestras cifras nos avalan
+      .col-md-4.h-100
+        i.bi.bi-person-plus-fill(title="icon symbolizing people" style="font-size:3rem;color:var(--col-primary)")
+        h3.h5.my-3 Más de 1.500
+        p.fst-italic Nuevas pólizas este año!
+      .col-md-4.pt-2.h-100
+        i.bi.bi-arrow-repeat(title="icon symbolizing people" style="font-size:3rem;color:var(--col-primary)")
+        h3.h5.my-3 Más de 400
+        p.fst-italic Siniestros solucionados con valoraciones positivas este año!
+      .col-md-4.h-100.pb-3
+        i.bi.bi-piggy-bank-fill(title="icon symbolizing people" style="font-size:3rem;color:var(--col-primary)")
+        h3.h5.my-3 Más de 300
+        p.fst-italic Nuevos paquetes de ofertas ofrecidas este año!
+
+  section.section-background.insurances-carousel.py-5
+    .container-fluid.px-0.pb-5
+      h3.display-4.text-center.pb-5.px-4.text-center.text-light.mx-auto(style="font-weight:500") Trabajamos con las todas las aseguradoras
+      #insurancesCarousel.carousel.slide(data-bs-ride='carousel' style="background-color:var(--col-white-alpha)")
+        .carousel-inner.px-5
+          .carousel-item.active
+            .row.align-items-center.justify-content-start.text-center.mt-5
+              .col-12.col-sm-6.col-md-4.col-lg-3.pb-5.company
+                a(target="_blank" href="https://www.seguros.adeslas.es/productos/inicio-es")
+                  img.img-fluid(src="/img/insurance-companies/adeslas.png" alt="logo de adeslas" style="max-height: 4rem;width:auto")
+              .col-sm-6.col-md-4.col-lg-3.d-none.d-sm-block.pb-5.company
+                a(target="_blank" href="https://www.aegon.es/")
+                  img.img-fluid(src="/img/insurance-companies/aegon.png" alt="logo de aegon" style="max-height: 4rem;width:auto")
+              .col-md-4.col-lg-3.d-none.d-md-block.pb-5.company
+                a(target="_blank" href="https://www.allianz.es/")
+                  img.img-fluid(src="/img/insurance-companies/Allianz.png" alt="logo de allianz" style="max-height: 4rem;width:auto")
+              .col-lg-3.d-none.d-lg-block.pb-5.company
+                a(target="_blank" href="https://www.arag.es/")
+                  img.img-fluid(src="/img/insurance-companies/Arag.png" alt="logo de arag" style="max-height: 4rem;width:auto")
+          .carousel-item
+            .row.align-items-center.justify-content-start.text-center.flex-nowrap.mt-5
+              .col-12.col-sm-6.col-md-4.col-lg-3.pb-5.company
+                a(target="_blank" href="https://www.asefa.es/")
+                  img.img-fluid(src="/img/insurance-companies/Asefa.png" alt="logo de asefa" style="max-height: 4rem;width:auto")
+              .col-sm-6.col-md-4.col-lg-3.d-none.d-sm-block.pb-5.company
+                a(target="_blank" href="https://www.asisa.es/seguros-medicos")
+                  img.img-fluid(src="/img/insurance-companies/asisa.png" alt="logo de asisa" style="max-height: 4rem;width:auto")
+              .col-md-4.col-lg-3.d-none.d-md-block.pb-5.company
+                a(target="_blank" href="https://www.auraseguros.com/")
+                  img.img-fluid(src="/img/insurance-companies/aura.png" alt="logo de aura" style="max-height: 4rem;width:auto")
+              .col-lg-3.d-none.d-lg-block.pb-5.company
+                a(target="_blank" href="https://www.axa.es/")
+                  img.img-fluid(src="/img/insurance-companies/axa.jpg" alt="logo de axa" style="max-height: 4rem;width:auto")
+          .carousel-item
+            .row.align-items-center.justify-content-start.text-center.flex-nowrap.mt-5
+              .col-12.col-sm-6.col-md-4.col-lg-3.pb-5.company
+                a(target="_blank" href="https://www.caser.es/")
+                  img.img-fluid(src="/img/insurance-companies/caser.png" alt="logo de caser" style="max-height: 4rem;width:auto")
+              .col-sm-6.col-md-4.col-lg-3.d-none.d-sm-block.pb-5.company
+                a(target="_blank" href="https://www.seguroscatalanaoccidente.com/")
+                  img.img-fluid(src="/img/insurance-companies/catalana-occidente.png" alt="logo de catalana occidente" style="max-height: 4rem;width:auto")
+              .col-md-4.col-lg-3.d-none.d-md-block.pb-5.company
+                a(target="_blank" href="https://www.directseguros.es/")
+                  img.img-fluid(src="/img/insurance-companies/Direct.png" alt="logo de direct" style="max-height: 4rem;width:auto")
+              .col-lg-3.d-none.d-lg-block.pb-5.company
+                a(target="_blank" href="https://dkv.es/particulares")
+                  img.img-fluid(src="/img/insurance-companies/DKV.png" alt="logo de DKV" style="max-height: 4rem;width:auto")
+          .carousel-item
+            .row.align-items-center.justify-content-start.text-center.flex-nowrap.mt-5
+              .col-12.col-sm-6.col-md-4.col-lg-3.pb-5.company
+                a(target="_blank" href="https://www.allianzdirect.es")
+                  img.img-fluid(src="/img/insurance-companies/Allianz_Direct.png" alt="logo de Allianz Direct" style="max-height: 4rem;width:auto")
+              .col-sm-6.col-md-4.col-lg-3.d-none.d-sm-block.pb-5.company
+                a(target="_blank" href="https://www.fiatc.es/")
+                  img.img-fluid(src="/img/insurance-companies/fiatc.png" alt="logo de fiatc" style="max-height: 4rem;width:auto")
+              .col-md-4.col-lg-3.d-none.d-md-block.pb-5.company
+                a(target="_blank" href="https://www.fidelidade.es/")
+                  img.img-fluid(src="/img/insurance-companies/fidelidade.png" alt="logo de fidelidade" style="max-height: 4rem;width:auto")
+              .col-lg-3.d-none.d-lg-block.pb-5.company
+                a(target="_blank" href="https://www.generali.es/")
+                  img.img-fluid(src="/img/insurance-companies/Generali.png" alt="logo de generali" style="max-height: 4rem;width:auto")
+          .carousel-item
+            .row.align-items-center.justify-content-start.text-center.flex-nowrap.mt-5
+              .col-12.col-sm-6.col-md-4.col-lg-3.pb-5.company
+                a(target="_blank" href="https://www.genesis.es")
+                  img.img-fluid(src="/img/insurance-companies/Genesis.png" alt="logo de genesis" style="max-height: 4rem;width:auto")
+              .col-sm-6.col-md-4.col-lg-3.d-none.d-sm-block.pb-5.company
+                a(target="_blank" href="https://www.helvetia.es/")
+                  img.img-fluid(src="/img/insurance-companies/helvetia.png" alt="logo de helvetia" style="max-height: 4rem;width:auto")
+              .col-md-4.col-lg-3.d-none.d-md-block.pb-5.company
+                a(target="_blank" href="https://www.ibermutua.es/")
+                  img.img-fluid(src="/img/insurance-companies/ibermutua.png" alt="logo de allianz" style="max-height: 4rem;width:auto")
+              .col-lg-3.d-none.d-lg-block.pb-5.company
+                a(target="_blank" href="https://www.ing.es/")
+                  img.img-fluid(src="/img/insurance-companies/ING.png" alt="logo de ING" style="max-height: 4rem;width:auto")
+          .carousel-item
+            .row.align-items-center.justify-content-start.text-center.flex-nowrap.mt-5
+              .col-12.col-sm-6.col-md-4.col-lg-3.pb-5.company
+                a(target="_blank" href="https://www.libertyseguros.es/")
+                  img.img-fluid(src="/img/insurance-companies/liberty.png" alt="logo de liberty" style="max-height: 4rem;width:auto")
+              .col-sm-6.col-md-4.col-lg-3.d-none.d-sm-block.pb-5.company
+                a(target="_blank" href="https://www.mapfre.es/")
+                  img.img-fluid(src="/img/insurance-companies/mapfre.png" alt="logo de mapfre" style="max-height: 4rem;width:auto")
+              .col-md-4.col-lg-3.d-none.d-md-block.pb-5.company
+                a(target="_blank" href="https://www.musepan.com/")
+                  img.img-fluid(src="/img/insurance-companies/musepan.png" alt="logo de musepan" style="max-height: 4rem;width:auto")
+              .col-lg-3.d-none.d-lg-block.pb-5.company
+                a(target="_blank" href="https://www.mutua.es")
+                  img.img-fluid(src="/img/insurance-companies/Mutua_madrilena.png" alt="logo de Mutua madrilena" style="max-height: 4rem;width:auto")
+          .carousel-item
+            .row.align-items-center.justify-content-start.text-center.flex-nowrap.mt-5
+              .col-12.col-sm-6.col-md-4.col-lg-3.pb-5.company
+                a(target="_blank" href="https://mutuadepropietarios.es")
+                  img.img-fluid(src="/img/insurance-companies/mutuapropietarios.png" alt="logo de mutuapropietarios" style="max-height: 4rem;width:auto")
+              .col-sm-6.col-md-4.col-lg-3.d-none.d-sm-block.pb-5.company
+                a(target="_blank" href="https://www.ocaso.es/es")
+                  img.img-fluid(src="/img/insurance-companies/ocaso.png" alt="logo de ocaso" style="max-height: 4rem;width:auto")
+              .col-md-4.col-lg-3.d-none.d-md-block.pb-5.company
+                a(target="_blank" href="https://www.pelayo.com")
+                  img.img-fluid(src="/img/insurance-companies/pelayo.png" alt="logo de pelayo" style="max-height: 4rem;width:auto")
+              .col-lg-3.d-none.d-lg-block.pb-5.company
+                a(target="_blank" href="https://www.previsionmallorquina.com")
+                  img.img-fluid(src="/img/insurance-companies/Prevision-mallorquina.png" alt="logo de Prevision mallorquina" style="max-height: 4rem;width:auto")
+          .carousel-item
+            .row.align-items-center.justify-content-start.text-center.flex-nowrap.mt-5
+              .col-12.col-sm-6.col-md-4.col-lg-3.pb-5.company
+                a(target="_blank" href="ttps://www.previsorageneral.com")
+                  img.img-fluid(src="/img/insurance-companies/previsora-general.png" alt="logo de previsora general" style="max-height: 4rem;width:auto")
+              .col-sm-6.col-md-4.col-lg-3.d-none.d-sm-block.pb-5.company
+                a(target="_blank" href="https://www.qualitasauto.com")
+                  img.img-fluid(src="/img/insurance-companies/Qualitas.png" alt="logo de Qualitas" style="max-height: 4rem;width:auto")
+              .col-md-4.col-lg-3.d-none.d-md-block.pb-5.company
+                a(target="_blank" href="https://www.reale.es")
+                  img.img-fluid(src="/img/insurance-companies/reale.png" alt="logo de reale" style="max-height: 4rem;width:auto")
+              .col-lg-3.d-none.d-lg-block.pb-5.company
+                a(target="_blank" href="https://www.sanitas.es")
+                  img.img-fluid(src="/img/insurance-companies/sanitas.jpg" alt="logo de sanitas" style="max-height: 4rem;width:auto")
+          .carousel-item
+            .row.align-items-center.justify-content-start.text-center.flex-nowrap.mt-5
+              .col-12.col-sm-6.col-md-4.col-lg-3.pb-5.company
+                a(target="_blank" href="https://www.santalucia.es")
+                  img.img-fluid(src="/img/insurance-companies/santalucia.jpg" alt="logo de santalucia" style="max-height: 4rem;width:auto")
+              .col-sm-6.col-md-4.col-lg-3.d-none.d-sm-block.pb-5.company
+                a(target="_blank" href="https://www.verti.es")
+                  img.img-fluid(src="/img/insurance-companies/Verti.png" alt="logo de verti" style="max-height: 4rem;width:auto")
+              .col-md-4.col-lg-3.d-none.d-md-block.pb-5.company
+                a(target="_blank" href="https://www.zurich.es")
+                  img.img-fluid(src="/img/insurance-companies/Zurich.png" alt="logo de zurich" style="max-height: 4rem;width:auto")
+              .col-lg-3.d-none.d-lg-block.pb-5.company
+                a(target="_blank" href="#")
+                  img.img-fluid(src="/img/insurance-companies/fenix-directo.png" alt="logo de Fénix Directo" style="max-height: 4rem;width:auto")
+        button.carousel-control-prev(type='button' data-bs-target='#insurancesCarousel' data-bs-slide='prev' style="filter:invert(100%);width:2rem")
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.visually-hidden Previous
+        button.carousel-control-next(type='button' data-bs-target='#insurancesCarousel' data-bs-slide='next' style="filter:invert(100%);width:2rem")
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.visually-hidden Next
+
+  section
+    .container-fluid(style='background-color: var(--col-secondary)')
+      .row.justify-content-center.align-items-center
+        .col-md-6.text-dark.p-5
+          h3.display-5 Descubre nuestras nuevas oficinas
+          p.h5.my-3 Estrenamos nueva oficina en Granada! Ven a visitarnos y obtén descuentos especiales!
+          a.btn.btn-outline-dark.mt-3(href='https://www.google.com/maps?ll=37.121332,-3.583444&z=16&t=m&hl=es&gl=US&mapclient=embed&cid=14343920815535404745' target="_blank") Conócenos!
+        .col-md-5.mt-md-0.mt-5.text-center.py-5(style='border-radius:.9rem')
+          img.img-fluid(src='/img/brand/pics/TyR-oficina2.jpg' alt='imagen de la nueva oficina de la Zubia' style="max-height: 30rem;border-radius:.5rem;box-shadow: .2rem .3rem .6rem .3rem rgba(0,0,0, 0.4);transform:rotate(2deg)")
+
+//- FOOTER
+include _footer
+
